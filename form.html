@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Aha! moment? Let's #commit</title>
+		<meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
+		<meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="uiux-logo.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+
+
+		<script src="js/modernizr.custom.js"></script>
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="jquery.easy-autocomplete.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<h1>Aha!</h1>
+				</div>
+     				<form class="fs-form fs-form-full" name="postform" action="ahapost.php" method="post" enctype="multipart/form-data" novalidate>
+				<!-- <form id="myform" action="ahapost.php" class="fs-form fs-form-full" autocomplete="off"> -->
+					<ol class="fs-fields">
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="office" name="
+							office" data-info="your office">headquarter &#9762</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q3a" name="office" type="radio" value="Beijing"/><label for="q3a" class="radio-beijing">Beijing</label></span>
+								<span><input id="q3b" name="office" type="radio" value="Hongkong"/><label for="q3b" class="radio-hongkong">Hong Kong</label></span>
+								<span><input id="q3c" name="office" type="radio" value="Kuala Lumpur"/><label for="q3c" class="radio-kl">Kuala Lumpur</label></span>
+								<span><input id="q3d" name="office" type="radio" value="Mumbai"/><label for="q3d" class="radio-mumbai">Mumbai</label></span>
+								<span><input id="q3j" name="office" type="radio" value="Seoul"/><label for="q3j" class="radio-kr">Seoul</label></span>
+								<span><input id="q3e" name="office" type="radio" value="Shanghai"/><label for="q3e" class="radio-shanghai">Shanghai</label></span>
+								<span><input id="q3f" name="office" type="radio" value="Singapore"/><label for="q3f" class="radio-singapore">Singapore</label></span>
+								<span><input id="q3g" name="office" type="radio" value="Sydney"/><label for="q3g" class="radio-sydney">Sydney</label></span>
+								<span><input id="q3h" name="office" type="radio" value="Taipei"/><label for="q3h" class="radio-taiwan">Taipei</label></span>
+								<span><input id="q3i" name="office" type="radio" value="Tokyo"/><label for="q3i" class="radio-tokyo">Tokyo</label></span>
+							</div>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q1" >your name</label>
+							<input class="fs-anim-lower" id="analyst_Name" for="q1" type="text" name="user_analyst" placeholder="type & select from drop down" required/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q2" data-info="your immediate manager">manager</label>
+							<input class="fs-anim-lower" id="manager_Name" name="user_manager" type="text" placeholder="TL/Manager who looks after this idea" required/>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" >your team</label>
+							<select class="cs-select cs-skin-boxes fs-anim-lower" name="user_leadProductOrCommittee">
+		                    <!-- <optgroup label="APAC Tech"> -->
+		                      <option value="" disabled selected>pick one!</option>
+				              <option value="APAC Tech" data-class="color-D8C26C">APAC Tech</option>
+				     <!--        </optgroup>
+				            <optgroup label="Company Financials"> -->
+				              <option value="ESG" data-class="color-6CD8C2">ESG</option>
+				              <option value="Fundamentals" data-class="color-6CD8C2">Fundamentals</option>
+				              <option value="Industry Experts" data-class="color-6CD8C2">Industry Experts</option>
+				            <!-- </optgroup>
+				            <optgroup label="CABM"> -->
+				              <option value="Contribution" data-class="color-6CB8D8">Contribution</option>
+				              <option value="EBM" data-class="color-6CB8D8">EBM</option>
+				           <!--  </optgroup>
+				            <optgroup label="Corp Evts, News, GDA"> -->
+				              <option value="Corp Action" data-class="color-FF5733">Corp Action</option>
+				              <option value="GD Analytics" data-class="color-FF5733">GD Analytics</option>
+				              <option value="IPO" data-class="color-FF5733">IPO</option>
+				              <option value="M&A" data-class="color-FF5733">M&A</option>
+				              <option value="MSG Compliance" data-class="color-FF5733">MSG Compliance</option>
+				              <option value="News Automation" data-class="color-FF5733">News Automation</option>
+				              <option value="Supply Chain" data-class="color-FF5733">Supply Chain</option>
+				              <option value="EVTS" data-class="color-FF5733">EVTS</option>
+				              <option value="BDVD" data-class="color-FF5733">BDVD</option>
+				            <!-- </optgroup>
+				            <optgroup label="DDS"> -->
+				              <option value="BNEF" data-class="color-FFC300">BNEF</option>
+				              <option value="Eco Stats" data-class="color-FFC300">Eco Stats</option>
+				              <option value="Energy & Commodities" data-class="color-FFC300">Energy & Commodities</option>
+				              <option value="F&O" data-class="color-FFC300">F&O</option>
+				              <option value="FX" data-class="color-FFC300">FX</option>
+				              <option value="Localization" data-class="color-FFC300">Localization</option>
+				              <option value="MSG Mining" data-class="color-FFC300">MSG Mining</option>
+				           <!--  </optgroup>
+				            <optgroup label="EE, Managed INV"> -->
+				              <option value="Earning Estimates" data-class="color-FF5733">Earning Estimates</option>
+				              <option value="Funds" data-class="color-FF5733">Funds</option>
+				              <option value="Holdings" data-class="color-FF5733">Holdings</option>
+				              <option value="Private Equity" data-class="color-FF5733">Private Equity</option>
+				              <option value="Index" data-class="color-FF5733">Index</option>
+				              <option value="Investor Profiles" data-class="color-FF5733">Investor Profiles</option>
+				              <option value="Hedge Funds" data-class="color-FF5733">Hedge Funds</option>
+				              <option value="FIGI" data-class="color-FF5733">FIGI</option>
+				              <option value="KYC" data-class="color-FF5733">KYC</option>
+				              <option value="LEI" data-class="color-FF5733">LEI</option>
+				           <!--  </optgroup>
+				            <optgroup label="Fixed Income"> -->
+				              <option value="CAST" data-class="color-6CB8D8">CAST</option>
+				              <option value="Fixed Income" data-class="color-6CB8D8">Fixed Income</option>
+				              <option value="Loans" data-class="color-6CB8D8">Loans</option>
+				              <option value="Mortgage" data-class="color-6CB8D8">Mortgage</option>
+				              <option value="Ratings" data-class="color-6CB8D8">Ratings</option>
+				            <!-- </optgroup> -->
+
+
+							</select>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q4">Describe your idea</label>
+							<textarea class="fs-anim-lower" id="user_project" name="user_project" value="user_project" placeholder="What was the gap? How did you solve it?"></textarea>
+						</li>
+						<li data-input-trigger>
+					        <!-- <label for="roi_type">Status:  &#9750;</label> -->
+							<label class="fs-field-label fs-anim-upper" for="q6">Status of the idea?</label>
+					        <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+					          <span><input id="p3a" name="stage" type="radio" value="Initial"/><label for="p3a">Initial</label></span>
+					          <span><input id="p3b" name="stage" type="radio" value="Shared with News"/><label for="p3b">Shared with News</label></span>
+					          <span><input id="p3c" name="stage" type="radio" value="Sharepoint"/><label for="p3c">Sharepoint</label></span>
+					          <span><input id="p3d" name="stage" type="radio" value="Published"/><label for="p3d">Published</label></span>
+					          <span><input id="p3e" name="stage" type="radio" value="DRQS 97"/><label for="p3e">DRQS B97</label></span>
+					          
+					          <span><input id="p3f" name="stage" type="radio" value="Developing"/><label for="p3f">Developing</label></span>
+					          <span><input id="p3g" name="stage" type="radio" value="Implemented"/><label for="p3g">Implemented</label></span>
+					        </div>					          
+					    </li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q5">Which category your idea belongs to?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q5a" name="news" type="radio" value="Data Driven News"/><label for="q5a" class="radio-news">Data Driven News</label></span>
+								<span><input id="q5b" name="tech" type="radio" value="Technology"/><label for="q5b" class="radio-tech">Technology</label></span>
+								<span><input id="q5d" name="data" type="radio" value="ThirstyForData"/><label for="q5d" class="radio-data">Thirsty For Data</label></span>
+								<span><input id="q5c" name="other" type="radio" value="Others"/><label for="q5c" class="radio-other">Others</label></span>
+							</div>
+						</li>
+
+
+					</ol><!-- /fs-fields -->
+					<!-- <button class="fs-submit" type="submit">Send</button> -->
+					<button class="fs-submit" type="submit">Send</button>
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+
+
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+		<script src="js/fullscreenForm.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+						}
+					});
+				} );
+
+				new FForm( formWrap, {
+					onReview : function() {
+						classie.add( document.body, 'overview' ); // for demo purposes only
+					}
+				} );
+			})();
+		</script>
+
+			<script type="text/javascript">
+	var options = {
+	    url: "analystName1.json",
+	    getValue: "Name",
+	    list: {
+	        maxNumberOfElements: 10,
+	        match: {
+	            enabled: true
+	        },
+	    },
+
+	};
+
+	$("#analyst_Name").easyAutocomplete(options);
+
+	</script>
+
+			<script type="text/javascript">
+	var optionsMA = {
+	    url: "managerName.json",
+	    getValue: "Name",
+	    list: {
+	        maxNumberOfElements: 10,
+	        match: {
+	            enabled: true
+	        },
+	    },
+
+	};
+
+	$("#manager_Name").easyAutocomplete(optionsMA);
+
+	</script>
+
+
+
+	</body>
+</html>
